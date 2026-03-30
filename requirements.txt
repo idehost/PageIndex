@@ -1,6 +1,21 @@
+# ── PageIndex core ────────────────────────────────────────────
 litellm==1.82.0
-# openai-agents  # optional: required for examples/agentic_vectorless_rag_demo.py
 pymupdf==1.26.4
 PyPDF2==3.0.1
 python-dotenv==1.1.0
 pyyaml==6.0.2
+
+# ── API server ────────────────────────────────────────────────
+fastapi==0.127.0
+uvicorn[standard]==0.40.0
+python-multipart==0.0.21
+pydantic==2.12.5
+
+# ── Database (PostgreSQL) ─────────────────────────────────────
+asyncpg==0.31.0
+
+# ── Cache (Redis) ─────────────────────────────────────────────
+redis[hiredis]==7.1.0
+
+# ── Optional: agentic RAG demo ────────────────────────────────
+# openai-agents

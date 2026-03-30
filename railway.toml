@@ -1,0 +1,12 @@
+[build]
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
+
+# Mount persistent volume at /data/pdfs
+[[mounts]]
+mountPath = "/data/pdfs"
