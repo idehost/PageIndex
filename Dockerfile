@@ -1,4 +1,4 @@
-FROM python:3.11-slim AS base
+FROM python:3.14-slim AS base
 
 # Prevent Python from buffering stdout/stderr (important for Railway logs)
 ENV PYTHONUNBUFFERED=1
